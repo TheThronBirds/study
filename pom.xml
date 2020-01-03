@@ -10,10 +10,19 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>common</module>
+        <module>messageQueue</module>
+        <module>config</module>
     </modules>
 
     <properties>
         <springboot-version>2.0.3.RELEASE</springboot-version>
+        <java-version>1.8</java-version>
+        <amqp-version>1.5.16.RELEASE</amqp-version>
+        <kafka-client.version>2.2.1</kafka-client.version>
+        <kafka.version>2.2.1</kafka.version>
+        <lombok-version>1.18.2</lombok-version>
+        <spring-jdbc.version>2.0.3.RELEASE</spring-jdbc.version>
+        <module.version>1.0-SNAPSHOT</module.version>
     </properties>
 
 
@@ -24,6 +33,47 @@
                 <artifactId>spring-boot-starter</artifactId>
                 <version>${springboot-version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>${amqp-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-client</artifactId>
+                <version>${kafka-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka_2.12</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>${spring-jdbc.version}</version>
+            </dependency>
+
+
+
+            <!--modules-->
+
+            <dependency>
+                <groupId>only.luzejin</groupId>
+                <artifactId>common</artifactId>
+                <version>${module.version}</version>
+            </dependency>
+
         </dependencies>
 
 
