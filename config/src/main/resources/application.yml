@@ -1,0 +1,13 @@
+only:
+  study:
+    profile: home
+    homeDataSource:
+      jdbcUrl: jdbc:oracle:thin:@10.71.21.151:1521:nftest
+      username: risk30
+      password: risk30_2019
+      driverClassName: oracle.jdbc.OracleDriver
+    companyDataSource:
+      jdbcUrl: jdbc:oracle:thin:@10.71.21.151:1521:nftest
+      username: rc
+      password: rc_2019nfjjtest
+      driverClassName: oracle.jdbc.OracleDriver
